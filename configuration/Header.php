@@ -98,9 +98,6 @@ if (in_array($Type,['Local','Online']))
             //"phenomena-weather"=> "الظواهر الجوية",
             //"Test-Clouds"=> "أطلس الغيوم",
             //"reports"=> "التقارير",
-            "Request/SET_LOGIN"=> "تسجيل دخـــول ( حــضــور )",
-            "Request/SET_LOGOUT"=> "تسجيل خـــروج ( إنــصــراف )",
-            "Request/SET_ABSENT"=> "تـسـجـيـل الغـيـاب",
             "manage-accounts"=> "إدارة حــســابــى",
             "history"=> "سـجـل عـمـلـى",
         ];
