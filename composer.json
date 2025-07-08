@@ -1,0 +1,15 @@
+{
+    "require": {
+        "php": "7.3",
+        "phpoffice/phpspreadsheet": "*",
+        "ifsnop/mysqldump-php": "*",
+        "symfony/finder": "*",
+        "symfony/http-foundation": "^5.4",
+        "ext-fileinfo": "*",
+        "ext-json": "*",
+        "ext-http": "*",
+        "ext-curl": "*",
+        "ext-pdo": "*",
+        "ext-mysqli": "*"
+    }
+}

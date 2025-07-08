@@ -1,0 +1,336 @@
+/* ------------------------------------------------------------------------------------------------------------------ */
+th,td,thead
+{
+    text-wrap: none;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+#ViewTable
+{
+    max-width: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#MainTable table
+{
+    width: 100%;
+    padding: 0;
+}
+
+#MainTable table td
+{
+    padding: 8px 18px;
+    border: 1px solid #c9f4f5;
+    cursor: pointer;
+    text-wrap: nowrap;
+    min-width: max-content;
+}
+
+#MainTable table th
+{
+    padding: 8px 18px;
+    border: 1px solid #c9f4f5;
+    cursor: pointer;
+    text-wrap: nowrap;
+    min-width: max-content;
+}
+
+
+#MainTable table tr
+{
+    font-size: 19px;
+    font-family: monospace;
+    font-weight: 900;
+    text-wrap: nowrap;
+    min-width: max-content;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+#MainTable table tr td, #MainTable table tr th
+{
+    border: 2px double #c9f4f5;
+}
+
+.Data-Table
+{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Data-Table td, .Data-Table th, .Data-Table table input
+{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    max-width: min-content;
+}
+
+.Data-Table table input
+{
+    border: none;
+    border-bottom: 2px solid #0d6efd;
+    border-top: 2px solid #0d6efd;
+    color: #0d6efd;
+    font-weight: 900;
+    width: 111px;
+    max-width: -moz-available;
+}
+
+.Data-Table table tr td, .Data-Table table tr th
+{
+    border: 2px double #ffffff;
+    min-width: max-content;
+    text-wrap: nowrap;
+    max-width: -moz-available;
+}
+
+.Data-Table table tr td:first-child,.Data-Table table tr th:first-child
+{
+    background-color: #ad600d28;
+    border: 2px solid #c9f4f5;
+}
+
+.Data-Table td span
+{
+    background-color: #ffc10745;
+    margin: 3px;
+    padding: 0 3px;
+    text-wrap-mode: nowrap;
+    border-left: 3px solid #ffc107;
+}
+
+.Title
+{
+    text-align: center;
+    background-color: #cf7b0f;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    border-right: 8px solid #000000;
+    color: #ffffff;
+}
+
+#File
+{
+    padding: 8px;
+    margin-bottom: 8px;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+}
+
+#File input
+{
+    background-color: #efefef;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    color: #000d56;
+    font-weight: 900;
+}
+
+.Choose
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Choose div
+{
+    padding: 4px 8px;
+    margin: 4px 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .75s;
+    cursor: pointer;
+    background-color: #efefef;
+}
+
+.Choose input
+{
+    cursor: pointer;
+}
+
+.Choose label
+{
+    margin: 2px 6px;
+    cursor: pointer;
+}
+
+.Choose button, .Button
+{
+    cursor: pointer;
+    transition: .75s;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.Choose div:hover,  #File input:hover, .Choose button:hover, .Button:hover
+{
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.Select
+{
+    color: #4caf50;
+    border-left: 8px solid #4CAF50;
+}
+
+.Choose button:hover, .Button:hover
+{
+    transform: rotate(360deg);
+}
+
+#File
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#Errors
+{
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 4px 12px;
+}
+
+.Search
+{
+    text-align: center;
+}
+
+.Download-Group
+{
+    cursor: pointer;
+    background-color: #000d56cf;
+    padding: 4px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+.Download-Group > label
+{
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.btn
+{
+    min-width: min-content;
+}
+
+a {
+    font-size: 16px;
+}
+
+.dt-buttons
+{
+    width: 100%;
+}
+
+div.dt-container > div.dt-buttons
+{
+    height: 35px;
+}
+
+div.dt-container > div.dt-buttons > div.dt-buttons.btn-group
+{
+    position: absolute;
+    top: 57px;
+    left: 0;
+    display: block;
+}
+
+.dt-search
+{
+    padding: 4px;
+}
+
+.dt-search input
+{
+    width: 100%;
+}
+
+.dt-length, .dt-length select, .dt-info
+{
+    text-align: center;
+    text-align-last: left;
+    margin: 4px;
+    font-weight: bolder;
+}
+
+.dt-length select, .dt-info
+{
+    text-align-last: center;
+}
+
+input[readonly]
+{
+    border: none;
+}
+
+
+.dt-length
+{
+    display: none;
+}
+
+.dt-info
+{
+    display: none;
+}
+
+.dt-search
+{
+    display: none;
+}
+
+.btn
+{
+    margin: 4px 12px;
+    padding: 4px 12px;
+    max-width: fit-content;
+    border-radius: 30px;
+}
+/* ------------------------------------------------------------------------------------------------------------------ */
+tr.Edit > td
+{
+    color: #070d78;
+}
+
+tr.Update > td
+{
+    color: #00d42d;
+}
+
+tr.After > td
+{
+    color: #ff0000;
+}
+
+tr.Right > td
+{
+    color: #000000;
+}

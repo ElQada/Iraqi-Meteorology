@@ -1,0 +1,11 @@
+.Data-Table table tr td:first-child,.Data-Table table tr th:first-child
+{
+    background-color: #ad600d28;
+    border: 2px solid #c9f4f5;
+}
+
+table.dataTable.table-bordered th:nth-child(5), table.dataTable.table-bordered td:nth-child(5),
+table.dataTable.table-bordered th:last-child, table.dataTable.table-bordered td:last-child
+{
+    color: #03a427;
+}

@@ -1,0 +1,115 @@
+#Header
+{
+    display: none;
+}
+
+
+.Station_Information
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.Slot
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #bcbcbc;
+    padding: 2px 4px;
+    margin: 2px 4px;
+}
+
+#All-Slot
+{
+    justify-content: space-between;
+    margin: 2%;
+}
+
+#Slot-A
+{
+    justify-content: space-between;
+    border: none;
+    width: 98%;
+}
+
+#Slot-B
+{
+    justify-content: space-between;
+    border: none;
+    width: 98%;
+}
+
+#Chart
+{
+    justify-content: space-between;
+    border: none;
+    width: 98%;
+}
+
+#Slot-A-1
+{
+
+}
+
+#Slot-A-2
+{
+
+}
+
+#Slot-C
+{
+    width: 100%;
+}
+
+#Slot-C > div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#Slot-C > div > label
+{
+    width: 115px;
+    padding: 15px 10px;
+    font-size: 30px;
+    background-color: #c8f3f4;
+    border-bottom: #ffffff solid 5px;
+    border-top: #ffffff solid 5px;
+}
+
+.Slot-Block
+{
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #7dc2e4;
+}
+
+#Metar, #TAF
+{
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 30px;
+    min-height: 60px;
+    text-align-last: left;
+    line-height: normal;
+    background-color: #ffffff;
+    font-weight: bolder;
+    align-content: center;
+}
+
+#Top > div
+{
+    width: 100%;
+    align-items: center;
+}

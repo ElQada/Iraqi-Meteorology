@@ -1,0 +1,62 @@
+    # Redirect Trailing Slashes If Not A Folder...
+
+    #RewriteEngine on
+    #RewriteCond %{HTTP_HOST} !^localhost$
+    #RewriteCond %{HTTPS} off
+    #RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    #RewriteBase /
+    #RewriteCond %{HTTPS} !=on [NC]
+    #RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+    #RewriteCond %{REQUEST_URI} !index.php
+    #RewriteCond %{REQUEST_FILENAME} !favicon.ico
+    #RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.*)$ /3L7/index.php/$1 [L,QSA]
+
+   AddCharset UTF-8 .txt
+   AddCharset UTF-8 .json
+   AddDefaultCharset UTF-8
+   # AddType allows you to add to or override the MIME configuration
+   AddType application/vnd.ms-excel .csv
+   AddType application/x-pilot .prc .pdb
+   AddType application/x-shockwave-flash .swf
+   AddType application/xrds+xml .xrdf
+   AddType text/plain .ini .sh .bsh .bash .awk .nawk .gawk .csh .var .c .in .h .asc .md5 .sha .sha1
+   AddType video/x-flv .flv
+   DefaultType text/html
+   # AddEncoding allows you to have certain browsers uncompress information on the fly. Note: Not all browsers support this.
+   AddEncoding x-compress .Z
+   AddEncoding x-gzip .gz .tgz
+   # Header Set
+   # Header set Set-Cookie HttpOnly;Secure;flavor=choco;SameSite=None
+   Header set X-Frame-Options SAMEORIGIN
+   Header set Access-Control-Max-Age 0
+   Header set Cache-Control: no-cache
+   Header set Expires 0
+   Header set Connection keep-alive
+
+   # HEADER CACHING
+
+   <FilesMatch "\.(flv|gif|jpg|jpeg|png|ico|txt|xml|json|pdf|swf|js|css)$">
+    Header set Cache-Control "max-age=1234567"
+    Header set Expires 1234567
+   </FilesMatch>
+
+   #<FilesMatch "\.(flv|gif|jpg|jpeg|png|ico|txt|xml|json|pdf|swf)$">
+    #Header set Cache-Control "max-age=1234567"
+    #Header set Expires 1234567
+   #</FilesMatch>
+
+   #<FilesMatch "\.(js|css)$">
+    #Header set Cache-Control "no-cache"
+    #Header set Expires 0
+    #Header set Cache-Control "max-age=1234567"
+    #Header set Expires 1234567
+   #</FilesMatch>
+
+   #<FilesMatch "(sweetalert.min.js|semantic.min.js|jquery-ui.js|jquery-3.7.1.min.js|jquery.tablesort.min.js|semantic.min.css|jquery-ui.css|icon.css|datatables.min.js|charts.js|datatables.min.css)">
+    #Header set Cache-Control "max-age=1234567"
+    #Header set Expires 1234567
+   #</FilesMatch>

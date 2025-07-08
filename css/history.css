@@ -1,0 +1,23 @@
+.Data-Table table tr td:first-child,.Data-Table table tr th:first-child
+{
+    background-color: #ad600d28;
+    border: 2px solid #c9f4f5;
+}
+
+table.dataTable.table-bordered th:nth-child(4), table.dataTable.table-bordered td:nth-child(4)
+{
+    text-align: center;
+}
+
+table.dataTable.table-bordered th:nth-child(5), table.dataTable.table-bordered td:nth-child(5)
+{
+    color: #03a427;
+}
+
+.Data-Table table tr td:last-child,.Data-Table table tr th:last-child
+{
+/*    text-align: start;
+    text-align-last: start;*/
+    background-color: #ad600d28;
+    border: 2px solid #c9f4f5;
+}

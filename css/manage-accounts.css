@@ -1,0 +1,25 @@
+select, .Select, .ui.form select,
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url], .ui.form textarea
+{
+    width: 170px;
+    height: 45px;
+}
+
+tr
+{
+    cursor: pointer;
+}
+
+#AccountCode
+{
+    min-width: 110px;
+    cursor: pointer;
+    background-color: #cf7b0f;
+    border-color: #ffffff;
+}
+
+
+#DataTable > tbody > tr > td:first-child, #DataTable > thead > tr > th:first-child
+{
+    display: none;
+}

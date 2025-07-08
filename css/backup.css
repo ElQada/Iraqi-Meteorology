@@ -1,0 +1,78 @@
+.List{
+    background-color: #ffffff5c;
+    padding: 6px;
+    margin: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .70s;
+}
+
+.List:hover
+{
+    background-color: #198f35;
+}
+
+.List label{
+    cursor: pointer;
+}
+
+
+.Info
+{
+
+}
+
+#Stations
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    overflow: auto;
+    align-items: center;
+}
+
+#Tables
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    overflow: auto;
+    align-items: center;
+}
+
+#Files
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    overflow: auto;
+    align-items: center;
+}
+
+#ui-datepicker-div, .ui-datepicker-calendar, .ui-datepicker
+{
+    z-index: 1000;
+}
+
+.Information_Item {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 2px;
+    padding: 2px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.Information_Item label {
+    background-color: #ffffff;
+    padding: 7px;
+    color: #000000;
+}

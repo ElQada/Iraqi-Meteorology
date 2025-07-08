@@ -1,0 +1,20 @@
+#Data-Send
+{
+    text-wrap: unset;
+    width: max-content;
+}
+
+#Top
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Top > div
+{
+    align-items: center;
+}
