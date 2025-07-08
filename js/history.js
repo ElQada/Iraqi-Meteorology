@@ -8,29 +8,18 @@ var
         {
             daily: "الرصد اليومي",
             courier: "الرصد الساعي",
-            //synop : "Synop",
-            //test_clouds: "أطلس الغيوم",
-            //test_weather : "الظواهر الجوية",
             accounts : "إدارة الـمـوظـفـيـن",
             stations : "إدارة الـمـحـطـات",
-            accounts_ : "الحضور والإنصراف",
-
         },
     $Type =
         {
             UPDATE : 'تعديل',
             DELETE : 'حذف',
             INSERT : 'أضافة',
-            LOGIN : "تـسـجـيـل دخــول" ,
-            //ERROR : "خـطـأ مـا !!",
-            ABSENT : "تــسـجـيـل غـــيــاب",
-            LOGOUT: "تـسـجـيـل خـــروج"
         };
 
 if ($DataTable)
 {
-    //  - "الرصد اليومي""الرصد الساعي""Synop""أطلس الغيوم""الظواهر الجوية"
-    // Type != 'INSERT' AND Keys NOT IN ('synop','test_clouds','test_weather')
     $DataTable.forEach((Row)=>{
         let Value = '';
         Row['Keys'] = $Keys[Row['Keys']];

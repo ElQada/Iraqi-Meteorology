@@ -21,7 +21,6 @@ if ($CurrentStation)
         Row['Manage'] = `<div class="Flex-2">`;
         Row['Manage'] += `<a target="_self" href="${CurrentLink}/manage-accounts.php?FilterStation=${Row['StationCode']}"> <div class="ui blue button"> الموظفين </div> </a>`;
         Row['Manage'] += `<a target="_self" href="${CurrentLink}/reports.php?SelectStation=${Row['id']}"> <div class="ui orange button"> التقارير </div> </a>`;
-        Row['Manage'] += `<a target="_self" href="${CurrentLink}/history.php?SelectStation=${Row['id']}&Account=${PHP.Sesstion.Account}&Station=${Row['Station']}&date=${PHP.MinDate}&_date_=${PHP.MaxDate}&page=1&limit=600&RefreshData=++تـحـديـث+المـعلـومات+&SelectKey=الحضور والإنصراف"> <div class="ui default button">  الـحـضـور  </div> </a>`;
         Row['Manage'] += `<a target="_self" href="${CurrentLink}/history.php?SelectStation=${Row['id']}&Account=${PHP.Sesstion.Account}&Station=${Row['id']}&date=${PHP.MinDate}&_date_=${PHP.MaxDate}&page=1&limit=600&RefreshData=++تـحـديـث+المـعلـومات+"> <div class="ui violet button"> الـسـجـل </div> </a>`;
         if (PHP.Sesstion.Role === 'admin')
         {
